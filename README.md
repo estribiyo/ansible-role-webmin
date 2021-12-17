@@ -1,6 +1,7 @@
 Ansible Role: webmin
 =========
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![Ansible Role](https://img.shields.io/badge/ansible%20role-cloudalchemy.node_exporter-blue.svg)](https://galaxy.ansible.com/artfulbodger/webmin/)
 
 Description
 ------------
@@ -26,8 +27,8 @@ All variables which can be overridden are stored in [defaults/main.yml](defaults
 Example Playbook
 ----------------
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
+Use it in a playbook as follows:
 
-    - hosts: servers
+    - hosts: webservers
       roles:
-         - { role: username.rolename, x: 42 }
+         - { role: artfulbodger.webmin, webmin_version: '1.970', webmin_port: '9000'}
