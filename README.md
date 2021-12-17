@@ -1,7 +1,7 @@
 Ansible Role: webmin
 =========
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![Ansible Role](https://img.shields.io/badge/ansible%20role-cloudalchemy.node_exporter-blue.svg)](https://galaxy.ansible.com/artfulbodger/webmin/)
+[![Ansible Role](https://img.shields.io/badge/ansible%20role-artfulbodger.webmin-blue.svg)](https://galaxy.ansible.com/artfulbodger/webmin/)
 
 Description
 ------------
