@@ -1,0 +1,16 @@
+---
+- name: Install gnupg for repo key management
+  apt:
+    name: "gnupg"
+    state: present
+
+- name: Add jcameron Apt signing key from the URL
+  ansible.builtin.apt_key:
+    url: https://download.webmin.com/jcameron-key.asc
+    state: present
+
+- name: Add Webmin repository into sources list
+  ansible.builtin.apt_repository:
+    repo: deb https://download.webmin.com/download/repository sarge contrib
+    filename: "webmin"
+    state: present

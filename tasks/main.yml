@@ -1,0 +1,11 @@
+---
+# tasks file for webmin
+
+- include: preflight.yml
+  when: ansible_os_family == 'Debian'
+
+- include: install-Debian.yml
+  when: ansible_os_family == 'Debian'
+
+- include: configure.yml
+  when: ansible_os_family == 'Debian'

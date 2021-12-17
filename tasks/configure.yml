@@ -1,0 +1,9 @@
+---
+# configures webmin
+
+- name: Copy miniserv.conf
+  template:
+    src: "{{ ansible_os_family }}-miniserv.conf.j2"
+    dest: /etc/webmin/miniserv.conf
+    mode: 0600
+  notify: restart webmin

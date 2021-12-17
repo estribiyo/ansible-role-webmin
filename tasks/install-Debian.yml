@@ -1,0 +1,9 @@
+---
+# install for Debian Family
+
+- name: "Install Webmin"
+  become: true
+  apt:
+    name: webmin={{ webmin-version }}
+    state: present
+  notify: "Start Webmin"
