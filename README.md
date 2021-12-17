@@ -1,20 +1,26 @@
-Ansible Role: webmin
-=========
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![Ansible Role](https://img.shields.io/badge/ansible%20role-artfulbodger.webmin-blue.svg)](https://galaxy.ansible.com/artfulbodger/webmin/)
+# Ansible Role: webmin
 
-Description
-------------
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![Ansible Galaxy](https://img.shields.io/badge/galaxy-artfulbodger.webmin-5bbdbf.svg)](https://galaxy.ansible.com/artfulbodger/webmin/)
+
+## Description
 
 Webmin installation for Debian.
 
-Requirements
-------------
+## Requirements
 
-- Ansible >= 2.7
+### Ansible
 
-Role Variables
---------------
+* This role is developed and tested with versions 2.12
+* You will need to run this role as a root user using Ansible's `become` parameter. Make sure you have set up the appropriate permissions on your target hosts.
+
+## Installation
+
+### Ansible Galaxy
+
+Use `ansible-galaxy install artfulbodger.webmin` to install the latest stable release of the role on your system.
+
+## Role Variables
 
 All variables which can be overridden are stored in [defaults/main.yml](defaults/main.yml) and are listed in the table below.
 
@@ -24,8 +30,7 @@ All variables which can be overridden are stored in [defaults/main.yml](defaults
 | webmin_port | 10000 | TCP port on which webmin will listen |
 
 
-Example Playbook
-----------------
+## Example Playbook
 
 Use it in a playbook as follows:
 
