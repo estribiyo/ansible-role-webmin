@@ -1,12 +1,12 @@
 ---
 # handlers file for webmin
 
-- name: restart webmin
+- name: "Restart Webmin"
   service:
     name: webmin
     state: restarted
 
-- name: start webmin
+- name: "Start Webmin"
   service:
     name: webmin
     state: started
