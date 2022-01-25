@@ -4,6 +4,6 @@
 - name: "Install Webmin"
   become: true
   apt:
-    name: webmin={{ webmin_version }}
+    name: webmin
     state: present
   notify: "Start Webmin"
