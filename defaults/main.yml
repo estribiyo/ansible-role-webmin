@@ -1,5 +1,5 @@
 ---
 # defaults file for ansible-role-webmin
 
-webmin_version: "1.983"
+webmin_version: "1.984"
 webmin_port: "10000"
